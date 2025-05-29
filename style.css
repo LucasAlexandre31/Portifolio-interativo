@@ -3,16 +3,51 @@
 :root {
     --cor01: #012030;
     --cor02: #13678A; 
-    --cor03: rgba(0, 0, 0, 0.205); 
-    --cor04: ; 
+    --cor03: rgba(4, 59, 104, 0.699); 
+    --cor04: #1982af; 
     --cor05: ; 
 }
 
 body {
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02) );
+    background-image: url('img/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
+}
+
+nav ul li {
+    border: 1px solid var(--cor02);
+    background-color: var(--cor03);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--cor03);
+}
+
+.inicial {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    list-style: none;
+    text-shadow: 2px 2px 5px var(--cor03);
+}
+
+#sobremim:hover {
+    transition: 0.3s; 
+    box-shadow: 2px 2px 5px var(--cor04);
+}
+
+#projetos:hover {
+    transition: 0.3s; 
+    box-shadow: 2px 2px 5px var(--cor04);
+}
+
+#contatos:hover {
+    transition: 0.3s; 
+    box-shadow: 2px 2px 5px var(--cor04);
 }
 
 main {
@@ -34,13 +69,7 @@ main p {
     font-size: 1em;
 }
 
-.inicial {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    list-style: none;
-    text-shadow: 2px 2px 5px var(--cor03);
-}
+
 .contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

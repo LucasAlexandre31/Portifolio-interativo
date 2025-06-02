@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 :root {
-    --cor01: #012030;
-    --cor02: #13678A; 
-    --cor03: rgba(4, 59, 104, 0.699); 
-    --cor04: #1982af; 
-    --cor05: rgba(4, 59, 104, 0.74);; 
+    --cor01: #013016;
+    --cor02: #138a3b; 
+    --cor03: rgba(4, 104, 29, 0.699); 
+    --cor04: #19af5c; 
+    --cor05: rgba(4, 104, 49, 0.945);; 
 }
 
 body {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('img/fundo.png');
+    background-image: url('img/fundo1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,11 +26,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px var(--cor03);
+    cursor: pointer;
 }
 
 .lipag1:hover{
     transition: 0.3s; 
     box-shadow: 2px 2px 5px var(--cor04);
+  
 }
 
 .inicial{
@@ -95,7 +97,7 @@ main h3{
     height: 500px;
 }
 header img {
-    border: 2px solid white;
+    border: 2px solid var(--cor04);
     border-radius: 50%;
     height: 200px;
     width: 200px;

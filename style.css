@@ -8,23 +8,23 @@
     --cor05: rgba(4, 104, 49, 0.945);; 
 }
 
-body {
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('img/fundo1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+.inicial{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    list-style: none;
+    text-shadow: 2px 2px 5px var(--cor03);
 }
 
 .lipag1{
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid var(--cor02);
     background-color: var(--cor03);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 2px 2px 5px var(--cor03);
     cursor: pointer;
 }
@@ -35,15 +35,19 @@ body {
   
 }
 
-.inicial{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    list-style: none;
-    text-shadow: 2px 2px 5px var(--cor03);
+body {
+    background-image: url('img/fundo1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
 }
 
-#mainpag1{
+#div1pag1 {   
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -51,52 +55,97 @@ body {
     padding: 20px;
     background-color: var(--cor05);
     box-shadow: 0px 0px 10px var(--cor03);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-main p{
-    margin: 15px 0px;
+#div1pag1:hover {
+    transition: 0.5s; 
+    box-shadow: 2px 2px 5px var(--cor02);
+}
+
+#div2pag1 {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor05);
+    box-shadow: 0px 0px 10px var(--cor03);
+    border-radius: 20px;
+    list-style: none;
+    display: flex;
+}
+
+#div2pag1:hover {
+    transition: 0.5s; 
+    box-shadow: 2px 2px 5px var(--cor02);
+}
+
+#div2pag1 h1 {
+   height: 0px;
+   width: 0px;
+   margin: 10px;
+}
+
+.projects {
+    margin: 65px 40px 40px 40px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgba(2, 185, 26, 0.877);
+    box-shadow: 0px 0px 10px var(--cor01);
+}
+
+.projects:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px var(--cor02);
+    
+}
+
+.projects img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;;
+}
+
+#proj1 h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+#div3pag1 {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor05);
+    box-shadow: 0px 0px 10px var(--cor03);
+    border-radius: 20px;
+}
+
+div p{
+    margin: 25px;
     text-align: justify;
     text-indent: 30px;
     line-height: 2em;
     font-size: 1em;
 }
 
-main h1{
+div h1{
     text-align: center;
-    text-shadow: 2px 2px 5px var(--cor03);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
 }
 
-main h2{
-    text-shadow: 2px 2px 5px var(--cor03);
+div h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
 }
 
-main h3{
-    text-shadow: 2px 2px 5px var(--cor03);
+div h3{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
 }
 
-.contacts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 5px;
-    list-style: none;
-    text-shadow: 2px 2px 5px var(--cor03);
-    text-align:center;
-    height: 180px;
-}
-.projects {
-    text-shadow: 2px 2px 5px var(--cor03);
-}
-.projects img {
-    text-shadow: 2px 2px 5px var(--cor03);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 10px;
-    height: 500px;
-}
-header img {
+.center img {
     border: 2px solid var(--cor04);
     border-radius: 50%;
     height: 200px;
@@ -106,6 +155,7 @@ header img {
 
 .center {
     text-align: center;
+    
 }
 
 a {
